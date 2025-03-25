@@ -1,4 +1,9 @@
-.accesa{
-    display:none;
+.nascosta{
+    display:none
 }
+
+.visibile{
+    display:inline
+}
+
 

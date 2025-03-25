@@ -3,16 +3,18 @@ const spenta = document.querySelector(`.spenta`);
 const OnOffButton = document.getElementById(`onOffButton`);
 
 OnOffButton.addEventListener(`click`, function(){
-    if(accesa.classList.contains(`display:none`)){
-        accesa.classList.add(`display:inline`)
-        spenta.classList.add(`displa:none`)
+    if(accesa.classList.contains(`nascosta`)){
+        accesa.classList.remove(`nascosta`);
+        accesa.classList.add(`visibile`);
+        spenta.classList.remove(`visibile`);
+        spenta.classList.add(`nascosta`);
+    } else {
+        accesa.classList.remove(`visibile`);
+        accesa.classList.add(`nascosta`);
+        spenta.classList.remove(`nascosta`);
+        spenta.classList.add(`visibile`);
     }
-    else{
-        accesa.classList.add(`display:none`)
-        spenta.classList.add(`displa:inline`)
-    }
-    });
-    
+})
     
     
     
